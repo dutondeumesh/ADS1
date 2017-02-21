@@ -9,6 +9,12 @@ CREATE TABLE "public"."Artist"  (
 	PRIMARY KEY("ArtistId")
 )
 GO
+CREATE TABLE "public"."Artist"  ( 
+	"stId"	integer NOT NULL,
+	"Name"    	varchar(10) NULL,
+	PRIMARY KEY("ArtistId")
+)
+GO
 CREATE TABLE "public"."Customer"  ( 
 	"CustomerId"  	integer NOT NULL,
 	"FirstName"   	varchar(4) NOT NULL,
@@ -34,6 +40,12 @@ GO
 CREATE TABLE "public"."Artist"  ( 
 	"ArtistId"	integer NOT NULL,
 	"Name"    	varchar(120) NULL,
+	PRIMARY KEY("ArtistId")
+)
+GO
+CREATE TABLE "public"."Artist"  ( 
+	"stId"	integer NOT NULL,
+	"Name"    	varchar(10) NULL,
 	PRIMARY KEY("ArtistId")
 )
 GO
