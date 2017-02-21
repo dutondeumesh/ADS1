@@ -1,4 +1,4 @@
-//Writer : Umesh
+Pleas
 CREATE TABLE IF NOT EXISTS `user_details` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) DEFAULT NULL,
