@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS `user_details` (
   `gender` varchar(10) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   `status` tinyint(10) DEFAULT NULL,
+  `statusbar` varchar
   PRIMARY KEY (`user_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10001 ;
 
