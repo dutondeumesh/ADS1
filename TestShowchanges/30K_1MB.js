@@ -1,4 +1,4 @@
-﻿/*
+/*
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 File Name:postgres_v6.xjs
 Last Modified Date: 07 -04 -2014
@@ -17,11 +17,10 @@ This code will insert random data into the tables.
 //---------------------------------------------------------------------------------------------
 */
 importPackage(java.util); 
-
-
+importPackage(java.ubill);
 var maxRows                  =10;   //minimum number of rows to be inserted for each table.
 var allowTimestamp           = true; 
-var server                   =  "postgres";
+var server                   =  "CongoDB";
 var database                 =  "Test_DB"; 
 var schema                   = "public";  //hardcoded
 
@@ -15986,7 +15985,7 @@ function generateTableInsertScript(table_name_x, tabledata)
                                                                       
    
 var sql = " INSERT INTO"+" "+"\""+schema+"\""+"."+table_name_x+" VALUES (" + tabledata + ")" ;
-
+{for I -  jafsdsa sdjkf i ++)}
     aqua.console.println("Insert script: " + sql);
      try{
           var res = conn.executeUpdate(sql);
@@ -16003,7 +16002,7 @@ var sql = " INSERT INTO"+" "+"\""+schema+"\""+"."+table_name_x+" VALUES (" + tab
 //This function is optional for nextInteger() function
 function randomFromInterval(from,to)
 {
-    return Math.floor(Math.random()*(to-from+1)+from);
+    return Math.floor(Math.random()*(to-from-1)+from);
 }
 
 function generateRandomData(dataType,column)
