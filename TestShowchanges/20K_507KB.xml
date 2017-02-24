@@ -11,6 +11,8 @@
 <FIELD8>STORAGE &AMP; ORGANIZATION</FIELD8>
 <FIELD9>0.8</FIELD9>
 </ROW>
+<FIELD8>STORAGE &AMP; ORGANIZATION</FIELD8>
+ <FIELD9>0.8</FIELD9>
 <ROW>
 sdsah kijsadsa 
 <FIELD1>1.7 Cubic Foot Compact &quot;Cube&quot; Office Refrigerators</FIELD1>
@@ -19994,7 +19996,7 @@ sdsah kijsadsa
 <FIELD8>Bookcases</FIELD8>
 <FIELD9>0.61</FIELD9>
 </ROW>
-<ROW>
+<GOW>
 <FIELD1>T18</FIELD1>
 <FIELD2>Carlos Daly</FIELD2>
 <FIELD3>53990</FIELD3>
@@ -20004,5 +20006,4 @@ sdsah kijsadsa
 <FIELD7>Northwest Territories</FIELD7>
 <FIELD8>Telephones and Communication</FIELD8>
 <FIELD9>0.57</FIELD9>
-</ROW>
 
