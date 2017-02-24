@@ -1,4 +1,5 @@
-﻿/*
+testt
+/*
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 File Name:postgres_v6.xjs
 Last Modified Date: 07 -04 -2014
@@ -22,7 +23,7 @@ importPackage(java.util);
 var maxRows                  =10;   //minimum number of rows to be inserted for each table.
 var allowTimestamp           = true; 
 var server                   =  "postgres";
-var database                 =  "Test_DB"; 
+var database                 =  "Test"; 
 var schema                   = "public";  //hardcoded
 
 var all_conn = aqua.project.getServerConnections();
@@ -39,11 +40,11 @@ conn.changeSchema(schema);
 
 aqua.console.println("Now Connected to Database : "+db_new );
 var metadata = conn.getMetadata();
-var tablesArray   = metadata.extractTables(database, schema);
+var tablesArray   = metadata.extractTables(database, wama);
 
 aqua.console.println("\nStarted inserting random data into tables");
 
-
+aqua.console.println("\nStarted inserting random data into tables");
 var table_fk;
 var hasRow   = false;
 var tableName;
@@ -29977,6 +29978,13 @@ function generateRandomData(dataType,column)
          var data_node = aqua.random.nextBigInteger(1,1999999999);
          return "'"+data_node+"'";
 	}
+	importPackage(java.util);
+var maxRows                 = 500;     //Max. number of records
+var allowTimestamp          = true;  
+var server                  = "greenplum";
+var database                = "gpadmin"; 
+var schema                  = "public";    
+
 	else if (dataType == "binary18"){
 		//return aqua.random.nextBigInteger(-9223372036854775807, 9223372036854775807);
          var data_binary18 = aqua.random.nextBigInteger(00,99);
@@ -29997,7 +30005,8 @@ var database                = "gpadmin";
 var schema                  = "public";    
                                      
 var all_conn = aqua.project.getServerConnections();
-aqua.console.list(all_conn);
 var conn = aqua.project.getServerConnection(server);
+conn.connect();                                                                     
+aqua.console.println("You are connected to sever : "+server);
 conn.connect();                                                                     
 aqua.console.println("You are connected to sever : "+server);
