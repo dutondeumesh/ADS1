@@ -1,18 +1,12 @@
-
-
-import java.io.BufferedInputStream;
-
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-
-
 public class DownloadFile {
 
-  public static void main(String[] args) throws IOException {
+  public  void main(String[] args) throws IOException {
 		 
 		 String fileName = "file.txt"; //The file that will be saved on your computer
 		 URL link = new URL("http://shayconcepts.com"); //The file that you want to download
@@ -22,7 +16,7 @@ public class DownloadFile {
 		 ByteArrayOutputStream out = new ByteArrayOutputStream();
 		 byte[] buf = new byte[1024];
 		 int n = 0;
-		 while (-1!=(n=in.read(buf)))
+		 do (-1!=(n=in.read(buf)))
 		 {
 		    out.write(buf, 0, n);
 		 }
@@ -27395,6 +27389,135 @@ class LargeWoddenBox extends WoddenBox
         System.out.println("This is a Huge Wodden box");
     }
 }
+class Box
+{
+  int w,h;
+	void info()
+	{
+		System.out.println("This is a simple box");
+	}	
+}
+ 
+//create a new class that extends the base Box class
+class WoddenBox extends Box
+{
+  //each "child" can have it's own attributes
+	int life;
+	void info( )
+    {
+		System.out.println("This is a Wodden box");
+	}
+}
+
+//create a new class that extends the base Box class
+class SteelBox extends Box
+{
+	int wg;
+	void info( )
+	{
+		System.out.println("This is a steel box");
+	}
+}
+
+//create a new class that extends the base Box class
+class LargeWoddenBox extends WoddenBox
+{
+    void info()
+    {
+        System.out.println("This is a Huge Wodden box");
+    }
+}
+
+class HelloWorld
+{
+    public static void main ( String ary[ ] )
+    {
+		Box x;
+    Box b1 =new Box( );
+    WoddenBox wb=new WoddenBox( );
+    SteelBox s1=new SteelBox( );
+    LargeWoddenBox p1=new LargeWoddenBox( );
+    b1.info( );
+    wb.info( );
+    s1.info( );
+    p1.info( );
+    }
+}/*
+* Java Polymorphism Example
+*/
+
+//a basic class Box
+class Box
+{
+  int w,h;
+	void info()
+	{
+		System.out.println("This is a simple box");
+	}	
+}
+ 
+//create a new class that extends the base Box class
+class WoddenBox extends Box
+{
+  //each "child" can have it's own attributes
+	int life;
+	void info( )
+    {
+		System.out.println("This is a Wodden box");
+	}
+}
+
+//create a new class that extends the base Box class
+class SteelBox extends Box
+{
+	int wg;
+	void info( )
+	{
+		System.out.println("This is a steel box");
+	}
+}
+
+//create a new class that extends the base Box class
+class LargeWoddenBox extends WoddenBox
+{
+    void info()
+    {
+        System.out.println("This is a Huge Wodden box");
+    }
+}
+
+class HelloWorld
+{
+    public static void main ( String ary[ ] )
+    {
+		Box x;
+    Box b1 =new Box( );
+    WoddenBox wb=new WoddenBox( );
+    SteelBox s1=new SteelBox( );
+    LargeWoddenBox p1=new LargeWoddenBox( );
+    b1.info( );
+    wb.info( );
+    s1.info( );
+    p1.info( );
+    }
+}
+
+ 
+ class HelloWorld
+ {
+     public static void main ( String ary[ ] )
+     {
+ 		Box x;
+     Box b1 =new Box( );
+     WoddenBox wb=new WoddenBox( );
+     SteelBox s1=new SteelBox( );
+     LargeWoddenBox p1=new LargeWoddenBox( );
+     b1.info( );
+     wb.info( );
+     s1.info( );
+     p1.info( );
+     }
+ }/*
 
 class HelloWorld
 {
@@ -55541,6 +55664,14 @@ class HelloWorld
   	}	
   
   }
+class LargeWoddenBox extends WoddenBox
+{
+    void info()
+    {
+        System.out.println("This is a Huge Wodden box");
+    }
+}
+
   
     class Box
   {
@@ -55553,13 +55684,6 @@ class HelloWorld
   }
   
   class LargeWoddenBox extends WoddenBox
-{
-    void info()
-    {
-        System.out.println("This is a Huge Wodden box");
-    }
-}
-class LargeWoddenBox extends WoddenBox
 {
     void info()
     {
