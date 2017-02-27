@@ -1,3 +1,4 @@
+select * from answers
 db.currentop(
    {
      "waitingforlock" : true,
